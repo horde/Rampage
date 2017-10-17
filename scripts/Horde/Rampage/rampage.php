@@ -6,7 +6,7 @@
  *
  * Copyright 2003-2017 Horde LLC (http://www.horde.org/)
  *
- * For license info, see COPYING, for more information and a user guide see
+ * For license info, see LICENSE, for more information and a user guide see
  * README.
  *
  * @author  Karsten Fourmont <karsten@horde.org>
@@ -23,6 +23,7 @@ Horde_Registry::appInit('horde', array('authentication' => 'none'));
  * conversions are done.  handlers t_* for these files are called
  * before the default conversion, see transform code. */
 $files = array('COPYING',
+               'LICENSE',
                'edit.php',
                'index.php',
                'list.php',
