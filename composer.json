@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-rampage",
+    "name": "horde/rampage",
     "description": "Horde Rampage Application Server",
     "type": "library",
     "homepage": "https://pear.horde.org",
@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": "^5.3"
+        "php": "^5.3 || ^7"
     },
     "replace": {
         "pear-pear.horde.org/Horde_Rampage": "1.*",
