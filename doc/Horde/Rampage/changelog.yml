@@ -1,0 +1,23 @@
+---
+1.0.0alpha1:
+  api: 1.0.0
+  state:
+    release: alpha
+    api: alpha
+  date: 2011-03-07
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    First alpha release for Horde 4.
+0.1.3:
+  api: 0.1.3
+  state:
+    release: alpha
+    api: alpha
+  date: 2007-03-08
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    Horde_Rampage_Loader is now Horde_Loader
