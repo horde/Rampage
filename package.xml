@@ -10,7 +10,7 @@
   <email>chuck@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-27</date>
  <version>
   <release>1.0.0beta1</release>
   <api>1.0.0</api>
@@ -26,6 +26,13 @@
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
+   <dir name="doc">
+    <dir name="Horde">
+     <dir name="Rampage">
+      <file name="CHANGES" role="doc" />
+     </dir> <!-- /doc/Horde/Rampage -->
+    </dir> <!-- /doc/Horde -->
+   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Horde">
      <dir name="Rampage">
@@ -59,6 +66,7 @@
  </dependencies>
  <phprelease>
   <filelist>
+   <install as="CHANGES" name="doc/Horde/Rampage/CHANGES" />
    <install as="Horde/Rampage/Environment.php" name="lib/Horde/Rampage/Environment.php" />
    <install as="LICENSE" name="LICENSE" />
    <install as="Horde/Rampage/rampage.php" name="scripts/Horde/Rampage/rampage.php" />
