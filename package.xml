@@ -77,7 +77,7 @@
    <date>2007-03-08</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
-Horde_Rampage_Loader is now Horde_Loader
+* Horde_Rampage_Loader is now Horde_Loader
    </notes>
   </release>
   <release>
