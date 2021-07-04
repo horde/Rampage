@@ -1,4 +1,5 @@
 {
+    "minimum-stability": "dev",
     "name": "horde/rampage",
     "description": "Rampage application server library",
     "type": "library",
@@ -19,13 +20,16 @@
         }
     ],
     "require": {
-        "php": "^7"
+        "php": "^7.4 || ^8"
     },
     "require-dev": {},
     "suggest": {},
     "autoload": {
         "psr-0": {
             "Horde_Rampage": "lib/"
+        },
+        "psr-4": {
+            "Horde\\Rampage\\": "src/"
         }
     }
 }
