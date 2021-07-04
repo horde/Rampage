@@ -3,14 +3,14 @@
  <name>Horde_Rampage</name>
  <channel>pear.horde.org</channel>
  <summary>Rampage application server library</summary>
- <description>PHP 5 application framework for Horde</description>
+ <description>Modern PHP application framework for Horde.</description>
  <lead>
   <name>Chuck Hagenbuch</name>
   <user>chuck</user>
   <email>chuck@horde.org</email>
-  <active>yes</active>
+  <active>no</active>
  </lead>
- <date>2017-11-11</date>
+ <date>2021-07-04</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -21,6 +21,7 @@
  </stability>
  <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
  <notes>
+* [rla] Package for H6 / composer installer
 * [jan] Mark PHP 7 as supported.
 * [jan] Fix issues with certain locales like Turkish.
  </notes>
@@ -55,7 +56,7 @@
  <dependencies>
   <required>
    <php>
-    <min>5.3.0</min>
+    <min>7.0.0</min>
     <max>8.0.0alpha1</max>
     <exclude>8.0.0alpha1</exclude>
    </php>
@@ -97,9 +98,10 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-11-11</date>
+   <date>2021-07-04</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
+* [rla] Package for H6 / composer installer
 * [jan] Mark PHP 7 as supported.
 * [jan] Fix issues with certain locales like Turkish.
    </notes>

@@ -11,21 +11,18 @@
             "role": "lead"
         }
     ],
-    "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2021-07-04",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
-        "php": "^5.3 || ^7"
+        "php": "^7"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Rampage": "1.*",
-        "pear-horde/Horde_Rampage": "1.*"
-    },
+    "require-dev": {},
+    "suggest": {},
     "autoload": {
         "psr-0": {
             "Horde_Rampage": "lib/"
