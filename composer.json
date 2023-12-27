@@ -14,17 +14,11 @@
     "version": "1.0.0beta1",
     "time": "2017-03-20",
     "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
     ],
     "require": {
         "php": "^5.3 || ^7"
     },
     "replace": {
-        "pear-pear.horde.org/Horde_Rampage": "1.*",
-        "pear-horde/Horde_Rampage": "1.*"
     },
     "autoload": {
         "psr-0": {
