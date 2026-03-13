@@ -20,14 +20,15 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8"
+        "php": "^8",
+        "horde/argv": "^3"
     },
     "require-dev": {},
     "suggest": {},
     "autoload": {
-        "psr-0": {
-            "Horde_Rampage": "lib/"
-        },
+        "classmap": [
+            "lib/"
+        ],
         "psr-4": {
             "Horde\\Rampage\\": "src/"
         }
