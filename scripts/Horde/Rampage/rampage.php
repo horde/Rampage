@@ -878,16 +878,16 @@ function render_field($field)
     // Date/Time Types
     case 'date':
     case 'unixdate':
-        return "strftime(\$prefs->getValue('date_format'), \$zitem['$n'])";
+        return "\\Horde\\Date\\Format::formatDate(\$zitem['$n'], \$prefs->getValue('date_format'), \$GLOBALS['language'] ?? 'en_US')";
 
     case 'datetime':
     case 'timestamp':
     case 'unixepoch':
-        return "strftime(\$prefs->getValue('date_format') . ' %H:%M', \$zitem['$n'])";
+        return "\\Horde\\Date\\Format::formatDate(\$zitem['$n'], \$prefs->getValue('date_format') . ' HH:mm', \$GLOBALS['language'] ?? 'en_US')";
 
     case 'unixtime':
     case 'time':
-        return "strftime('%H:%M:%S', \$zitem['$n'])";
+        return "\\Horde\\Date\\Format::formatDate(\$zitem['$n'], 'HH:mm:ss', \$GLOBALS['language'] ?? 'en_US')";
 
     case 'year':
         return "\$zitem['$n']";

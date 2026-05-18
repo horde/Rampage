@@ -10,7 +10,7 @@ declare(strict_types=1);
  *
  * @category Horde
  * @package  Rampage
- * @author   Ralf Lang <lang@b1-systems.de>
+ * @author   Ralf Lang <ralf.lang@ralf-lang.de>
  * @license  http://www.horde.org/licenses/lgpl21 LGPL-2.1
  */
 
@@ -24,7 +24,7 @@ namespace Horde\Rampage;
  *
  * @category Horde
  * @package  Rampage
- * @author   Ralf Lang <lang@b1-systems.de>
+ * @author   Ralf Lang <ralf.lang@ralf-lang.de>
  * @license  http://www.horde.org/licenses/lgpl21 LGPL-2.1
  */
 class Rampage
