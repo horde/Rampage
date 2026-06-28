@@ -6,8 +6,7 @@ description: Modern PHP application framework for Horde.
 list: dev
 type: library
 authors:
-  -
-    name: Chuck Hagenbuch
+  - name: Chuck Hagenbuch
     user: chuck
     email: chuck@horde.org
     active: false
@@ -32,3 +31,28 @@ autoload:
   psr-4:
     Horde\Rampage\: src/
 vendor: horde
+keywords: null
+ci-platform:
+  '8.0':
+    - php: ^8
+    - ext-dom
+  '8.1':
+    - php: ^8
+    - ext-dom
+  '8.2':
+    - php: ^8
+    - ext-dom
+  '8.3':
+    - php: ^8
+    - ext-dom
+  '8.4':
+    - php: ^8
+    - ext-dom
+  '8.5':
+    - php: ^8
+    - ext-dom
+  '8.6':
+    - php: ^8
+    - ext-dom
+ci-platform-flags:
+  needs_installer_plugin: false

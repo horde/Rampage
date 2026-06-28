@@ -1,4 +1,5 @@
 <?php
+
 class Horde_Rampage_Environment
 {
     public function setup()
@@ -14,7 +15,7 @@ class Horde_Rampage_Environment
     public function reverseMagicQuotes()
     {
         if (get_magic_quotes_gpc()) {
-            $input = array(&$_GET, &$_POST, &$_REQUEST, &$_COOKIE, &$_ENV, &$_SERVER);
+            $input = [&$_GET, &$_POST, &$_REQUEST, &$_COOKIE, &$_ENV, &$_SERVER];
 
             foreach ($input as $k => $v) {
                 foreach ($v as $key => $val) {
@@ -23,7 +24,7 @@ class Horde_Rampage_Environment
                         $input[$k][$key] = stripslashes($val);
                         continue;
                     }
-                    $input[] =& $input[$k][$key];
+                    $input[] = & $input[$k][$key];
                 }
             }
 
@@ -42,7 +43,7 @@ class Horde_Rampage_Environment
     {
         if (ini_get('register_globals')) {
             // Variables that shouldn't be unset
-            $noUnset = array(
+            $noUnset = [
                 'GLOBALS',
                 '_GET',
                 '_POST',
@@ -51,7 +52,7 @@ class Horde_Rampage_Environment
                 '_SERVER',
                 '_ENV',
                 '_FILES',
-            );
+            ];
 
             $input = array_merge(
                 $_GET,
@@ -60,7 +61,7 @@ class Horde_Rampage_Environment
                 $_SERVER,
                 $_ENV,
                 $_FILES,
-                isset($_SESSION) ? $_SESSION : array()
+                $_SESSION ?? []
             );
 
             foreach ($input as $k => $v) {

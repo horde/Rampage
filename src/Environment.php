@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Inherited from the original H4 rampage project
  */
@@ -30,7 +31,7 @@ class Environment
                         $input[$k][$key] = stripslashes((string) $val);
                         continue;
                     }
-                    $input[] =& $input[$k][$key];
+                    $input[] = & $input[$k][$key];
                 }
             }
 
